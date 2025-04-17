@@ -25,5 +25,18 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
                 <li><a href="./logout.php"></a></li>
             </ul>
         </nav>
-        <p class="login-status">Logado como:</p>
+        <p class="login-status">Logado como: <strong><?php echo $_SESSION['username']; ?></strong></p>
     </header>
+
+    <main class="content">
+        <section>
+            <h2>Bem vindo ao nosso colégio</h2>
+            <p>O colégio Alberto Gomes Veiga oferece ensino de qualidade com foco em inovação e valores humanos.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 colégio Alberto Gomes Veiga. Todos os direitos reservados.</p> 
+    </footer>
+</body>
+</html>
